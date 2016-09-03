@@ -7,8 +7,7 @@
     "test": "test",
     "build": "babel lib -d dist",
     "dev": "babel -w lib -d dist",
-    "prepublish": "babel lib -d dist",
-    "publish": "npm version patch && npm publish && git push"
+    "prepublish": "babel lib -d dist"
   },
   "repository": {
     "type": "git",
