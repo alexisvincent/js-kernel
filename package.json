@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alexisvincent.io/js-kernel.git"
+    "url": "git+https://github.com/alexisvincent/js-kernel.git"
   },
   "keywords": [
     "kernel",
@@ -31,9 +31,9 @@
   "author": "Alexis Vincent",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/alexisvincent.io/js-kernel/issues"
+    "url": "https://github.com/alexisvincent/js-kernel/issues"
   },
-  "homepage": "https://github.com/alexisvincent.io/js-kernel#readme",
+  "homepage": "https://github.com/alexisvincent/js-kernel#readme",
   "devDependencies": {
     "babel-cli": "^6.14.0",
     "babel-preset-es2015": "^6.14.0"
