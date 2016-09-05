@@ -1,6 +1,6 @@
 {
   "name": "js-kernel",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "A kernel for your javascript app",
   "main": "dist/index.js",
   "scripts": {
