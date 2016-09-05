@@ -8,9 +8,9 @@ import routes from './routes.js'
 const kernel = build({
     routes,
     reducer,
-    hmr: {
-        https: true
-    }
+    // hmr: {
+    //     https: true
+    // }
 }, {})
 
 kernel.render()
