@@ -1,16 +1,20 @@
 import {build} from 'js-kernel'
-
+import React from 'react-dom'
 import reducer from './reducer.js'
 import routes from './routes.js'
-// import {initialState} from './core/entities/utilities.js'
-// import './app.ncss'
+import { DevTools, DevToolsEnhancer } from './DevTools.js'
 
 const kernel = build({
     routes,
     reducer,
-    // hmr: {
-    //     https: true
-    // }
-}, {})
+    enhancers: [
+        DevToolsEnhancer.instrument()
+    ]
+})
 
-kernel.render()
+kernel.render({transformer: (container) => {
+    React.DOM.div(null,
+        container,
+        DevTools({ store: kernel.store })
+    )
+}})
