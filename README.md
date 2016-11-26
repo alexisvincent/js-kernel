@@ -13,18 +13,19 @@ const kernel = build({
     // Redux Reducer
     reducer: (state, action) => state,
     // React Router Routes
-    routes: [...],
+    routes: [],
     // Redux Middleware
     middleware: [],
     // Redux Store Enhancers
     enhancers: [],
-    // Element to render to
-    element: document.getElementById('root'),
     // Where to store the router state
     selectLocationState: state => state.router
 }, {});
 
 // Render app
-kernel.render();
+kernel.render({
+    // Element to render to
+    element: document.getElementById('root')
+});
 
 ```
